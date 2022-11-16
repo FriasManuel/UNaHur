@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Para telefonos */
+  [class*="col-"] {
+    width: 100%;
+  }
+  li {
+    width: 100%;
+  }
+  header {
+    max-height: max-content;
+    min-height: min-content;
+  }
+  #menu_hor {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    min-height: min-content;
+  }
+  #img {
+    display: block;
+
+    min-width: 70%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  h1 {
+    width: 100%;
+    display: inline-block;
+    margin: 0 10%;
+    vertical-align: middle;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+#img {
+  max-width: 70%;
+  min-width: 60%;
+  height: auto;
+  display: inline-block;
+  padding: 0px 1px;
+  margin: 0 15%;
+  vertical-align: middle;
+}
+header {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+ 
+#Logo_Unahur {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 0px 10px;
+  font-size: calc(12px + 1.5%);
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+#barra_sup {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f08100;
+}
+
+#barra_inf {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 7px 10px;
+  background-color: #00a2cb;
+  position: sticky;
+  bottom: 0px;
+  max-height: min-content;
+}
+
+#menu_hor {
+  background-color: #f08100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu {
+  background-color: #f08100;
+  color: white;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  color: white;
+  display: block;
+  padding: 5px 3px;
+}
+
+#menu_hor a {
+  text-decoration: none;
+}
+
+#menu_hor ul li:hover {
+  background-color: #a56113;
+  text-decoration: none;
+}
+#menu_hor ul li ul li a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ul > li {
+  float: left;
+}
+ul li ul {
+  display: none;
+  position: absolute;
+}
+
+ul li:hover > ul {
+  display: block;
+}
+
+main {
+  line-height: 1.5;
+  margin: 15px;
+}
+
+#container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-self: center; */
+  justify-content: center;
+  margin: auto;
+}
+
+#container #card {
+  width: 330px;
+  height: max-content;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+#container #card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+#container #card img {
+  width: 330px;
+  height: 220px;
+}
+#container #card h4 {
+  font-weight: 600;
+}
+#container #card p {
+  padding: 0 1rem;
+  font-size: 12px;
+  font-weight: 300;
+}
+#container #card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498bd;
+}
+
+
+footer  {
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    background-color: #000a12;
+    color: #6e6e6e;
+    border-top: 2mm groove #c1d5e0;
+    max-height: min-content;
+}
+.footer{
+    font-style: italic;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+footer img {
+    width: 28px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}

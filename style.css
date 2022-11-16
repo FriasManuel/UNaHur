@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  li {
+    width: 100%;
+  }
+  header {
+    max-height: max-content;
+    min-height: min-content;
+  }
+  #menu_hor, #menu_campus{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    min-height: min-content;
+  }
+  #Logo_Unahur, #img_campus {
+    display: inline-block;
+    width: 100%;
+    padding: 0px 1px;
+    margin: 0 43%;
+    vertical-align: middle;
+}
+#img_campus,#Docente, #Alumno{
+    display: block;
+    clear: both;
+    overflow: hidden;
+    margin: 0px;
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+}
+h1{
+    width: 100%;
+    display: inline-block;
+    margin: 0 10%;
+    vertical-align:middle;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 { width: 8.33%;}
+.col-2 { width: 16.66%;}
+.col-3 { width: 25%;}
+.col-4 { width: 33.33%;}
+.col-5 { width: 41.66%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58.33%;}
+.col-8 { width: 66.66%;}
+.col-9 { width: 75%;}
+.col-10 { width: 83.33%;}
+.col-11 { width: 91.66%;}
+.col-12 { width: 100%;}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#Logo_Unahur {
+  display: inline-block;
+  max-width: calc(30px + 10vw) ;
+  height: auto;
+  vertical-align: middle;
+}
+
+#img_campus{
+    display: inline-block;
+    max-width: 80% ;
+    height: auto;
+}
+
+h1 {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 5vw;
+  color: #333;
+  text-transform: uppercase;
+}
+
+h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+#tex_cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+h5{
+    font-family: 'Mukta', sans-serif;
+    font-weight: bolder;
+}
+
+p {
+    text-align: justify;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+#Docente, #Alumno, #botones_campus {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    margin-left: 5px;
+    padding: 0px;
+}
+
+#Alumno {
+    border-top: solid #000a1252;
+    border-width: 1px;    
+}
+
+#form_login {
+    margin: 0px 40px;
+    max-width:25%;
+    min-width:250px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 0px 10px;
+  font-size: calc(12px + 1.5%);
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+#Inst_cen {
+    text-align: center;
+    padding-bottom: 100px ;
+}
+
+#barra_sup {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #008500;
+}
+
+#barra_inf {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 7px 10px;
+  background-color: #00a2cb;
+  position: sticky;
+  bottom: 0px;
+  max-height: min-content;
+}
+
+#menu_hor {
+    background-color: #008500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_campus {
+    height: 40px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 7px 10px; */
+    padding-top: 25px;
+    margin: 0px;
+    background-color: #00a2cb;
+    position: sticky;
+    bottom: 30px;
+}
+
+.dropdown-menu {
+  background-color: #5ee962;
+  color: white;
+}
+
+ul, li {
+  list-style: none;
+  text-decoration: none;
+  font-family: arial;
+  color: white;
+  display: block;
+  padding: 5px 3px;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+#menu_hor ul li:hover {
+  background-color: #22a566a5;
+  text-decoration: none;
+}
+#menu_hor ul li ul li a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ul > li {
+  float: left;
+}
+ul li ul {
+  display: none;
+  position: absolute;
+}
+
+ul li:hover > ul {
+  display: block;
+}
+
+main {
+  line-height: 1.5;
+  margin: 15px;
+}
+
+#Institucional,
+#CYT,
+#Ext,
+#becas,
+#IgYGen,
+#Edit,
+#LaPerDelOeste {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 10px;
+  margin: 15px 50px 10px 2px;
+  background-color: #00a2cb1d;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+#CYT {
+  background-size: cover;
+  background-position: center;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  background-color: #008500;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+footer  {
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    background-color: #000a12;
+    color: #6e6e6e;
+    border-top: 2mm groove #c1d5e0;
+    max-height: min-content;
+}
+.footer{
+    font-style: italic;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+footer img {
+    width: 28px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
